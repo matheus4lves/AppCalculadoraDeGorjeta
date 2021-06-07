@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valorConta"
+            android:id="@+id/editBillValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/texto_dica_valor_conta"
@@ -40,7 +40,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textoPorcentagemGorjeta"
+        android:id="@+id/textTipPercentage"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <SeekBar
-        android:id="@+id/porcentagemGorjeta"
+        android:id="@+id/seekBarTipPercentage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -62,7 +62,7 @@
         android:layout_marginRight="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textoPorcentagemGorjeta"
+        app:layout_constraintStart_toEndOf="@+id/textTipPercentage"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
@@ -75,7 +75,7 @@
         android:padding="5dp"
         android:text="@string/texto_titulo_total_gorjeta"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoPorcentagemGorjeta" />
+        app:layout_constraintTop_toBottomOf="@+id/textTipPercentage" />
 
     <TextView
         android:id="@+id/textoTotalConta"
@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textoTotalGorjeta" />
 
     <TextView
-        android:id="@+id/totalGorjeta"
+        android:id="@+id/textTipTotal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -104,10 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textoTotalGorjeta"
-        app:layout_constraintTop_toBottomOf="@+id/textoPorcentagemGorjeta" />
+        app:layout_constraintTop_toBottomOf="@+id/textTipPercentage" />
 
     <TextView
-        android:id="@+id/totalConta"
+        android:id="@+id/textBillTotal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -120,5 +120,5 @@
         android:text="@string/texto_total_conta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textoTotalConta"
-        app:layout_constraintTop_toBottomOf="@+id/totalGorjeta" />
+        app:layout_constraintTop_toBottomOf="@+id/textTipTotal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
